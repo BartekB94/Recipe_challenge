@@ -6,7 +6,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-family: "Young Serif", serif;
+    font-family: "Outfit", sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -49,6 +49,11 @@ h3 {
     color: #854631;
     font-size: 1.5rem;
 }
+
+h1, h3 {
+    font-family:  "Young Serif", serif;
+}
+
 
 #preparation {
     font-family: "Outfit", sans-serif;
@@ -93,7 +98,7 @@ ul {
 }
 
 .ing-head {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.7rem;
 }
 
 .ing-list {
@@ -119,7 +124,7 @@ ul {
 }
 
 .inst-head {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.7rem;
 }
 
 .inst-list {
@@ -138,6 +143,47 @@ ol li::marker {
     font-weight: 500;
 }
 
+.nut-head, .description {
+    padding-bottom: 0.7rem;
+}
+
+
+
+#bottom-table {
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom-table, .description {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.border {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.094);
+}
+
+.row p {
+    margin-left: 30px;
+    flex-basis: 40%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.right {
+    color: #854631;
+}
+
+.para {
+    font-weight: 400;
+}
+
 
 @media (min-width: 375px){
 
@@ -148,6 +194,7 @@ ol li::marker {
     #main-container {
         margin: 50px;
         padding: 2rem;
+        width: 50%;
     }
 
     img {
