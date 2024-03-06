@@ -185,7 +185,7 @@ ol li::marker {
 }
 
 
-@media (min-width: 375px){
+@media (min-width: 576px){
 
     body {
         background-color: #F3E6D8;
