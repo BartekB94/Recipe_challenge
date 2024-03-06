@@ -5,65 +5,152 @@
 }
 
 body {
-    background-color: #F3E6D8;
+    background-color: #FFFFFF;
     font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+    display: flex;
+    justify-content: center;
 }
 
 #main-container {
     background-color: #FFFFFF;
+    width: 1000px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 50px;
-    padding: 2rem;
-}
-
-/* .content {
-    
-} */
-
-img {
+    align-items: left;
     border-radius: 10px;
 }
 
-h1 {
-    font-size: 4rem;
-    opacity: 80%;
-    font-weight: 50;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.content {
+    margin: 1rem 1.5rem 1rem 1.5rem;
 }
 
-h4 {
-    font-size: 1.75rem;
+
+
+p, li {
+    font-size: smaller;
+    color: #575757;
+}
+
+#img-container {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+h1 {
+    opacity: 0.8;
+    margin-bottom: 1rem; 
+}
+
+h3 {
     color: #854631;
+    font-size: 1.5rem;
 }
 
 #preparation {
+    font-family: "Outfit", sans-serif;
     background-color: #FFF7FB;
-    width: 100%;
-    padding: 1rem;
+    width: 80%;
+    padding: 0.7rem;
     border-radius: 10px;
 }
 
 .prep-head {
     color: #6e2e49;
-    font-size: 1.25rem;
-    padding: 1em;
+    font-weight: 600;
+    padding: 1rem;
+    opacity: 1;
+    font-size: 1.1rem;
 }
 
 .prep-list {
-    list-style-type: disc;
-    padding-left: 2.5em;
+    padding-left: 2rem;
 }
 
 .prep-list li {
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.prep-list li::before {
+    content: "•"; 
+    color: #6e2e49;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -2em
+}
+
+#ingredients {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.094);
+}
+
+.ing-head {
+    padding-bottom: 0.5rem;
+}
+
+.ing-list {
+    padding-left: 1rem;
+}
+
+.ing-list li {
+    padding-left: 1rem;
+    padding-bottom: 5px;
+}
+
+.ing-list li::before {
+    content: "•"; 
+    color: #854631;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -2em
+}
+
+#instructions {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.094);
+}
+
+.inst-head {
+    padding-bottom: 0.5rem;
+}
+
+.inst-list {
+    padding-left: 1rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.inst-list li {
+    padding-left: 1rem;
+    padding-bottom: 5px;
 }
 
 
-#ingredients {
-    border-bottom: 2px solid blue;
+ol li::marker {
+    color: #854631;
+    font-weight: 500;
+}
+
+
+@media (min-width: 375px){
+
+    body {
+        background-color: #F3E6D8;
+    }
+
+    #main-container {
+        margin: 50px;
+        padding: 2rem;
+    }
+
+    img {
+        border-radius: 10px;
+    }
 }
